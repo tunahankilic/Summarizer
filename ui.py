@@ -1,9 +1,10 @@
 import gradio as gr
 
+from webpage_summarizer import summarize_webpage, is_accessible
 from youtube_summarizer import summarize_yt_video, is_valid_youtube_link
+#from dspy_wp_summarizer import summarize_webpage, is_accessible
 #from dspy_yt_summarizer import summarize_yt_video, is_valid_youtube_link
-#from webpage_summarizer import summarize_webpage, is_accessible
-from dspy_wp_summarizer import summarize_webpage, is_accessible
+
 
 
 def summarize(url):
