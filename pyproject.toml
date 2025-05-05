@@ -1,23 +1,18 @@
-[tool.poetry]
+[project]
 name = "local-model"
 version = "0.1.0"
-description = ""
-authors = ["Tunahan Kilic <kilic.tunahan@gmail.com>"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = ">=3.11,<3.12"
-python-dotenv = "^1.0.1"
-ipykernel = "^6.29.4"
-langchain = "^0.2.1"
-langchain-community = "^0.2.1"
-tiktoken = "^0.7.0"
-beautifulsoup4 = "^4.12.3"
-pandas = "^2.2.2"
-youtube-transcript-api = "^0.6.2"
-gradio = "4.32.2"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "dspy>=2.6.22",
+    "gradio>=5.29.0",
+    "ipykernel>=6.29.5",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.23",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.1.0",
+    "tiktoken>=0.9.0",
+    "youtube-transcript-api>=1.0.3",
+]

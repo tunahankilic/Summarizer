@@ -71,7 +71,7 @@ def summarization_chain():
         input_variables=["text"],
         #output_parser=StrOutputParser()
     )
-        llm = ChatOllama(model="llama3.1:8b-instruct-q4_0", base_url="http://127.0.0.1:11434")
+        llm = ChatOllama(model="qwen3:8b", base_url="http://127.0.0.1:11434")
         summary_chain = load_summarize_chain(llm=llm, prompt=prompt_template, verbose=False)
         return summary_chain
 

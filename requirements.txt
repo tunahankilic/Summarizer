@@ -1,0 +1,10 @@
+python-dotenv
+ipykernel
+langchain
+langchain-community
+tiktoken
+beautifulsoup4
+pandas
+youtube-transcript-api
+gradio
+dspy

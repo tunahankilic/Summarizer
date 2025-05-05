@@ -36,6 +36,9 @@ notebooks/
 tests/
 *.env
 .ipynb_checkpoints/
+uv.lock
+.python-version
+.venv
 
 ### macOS Patch ###
 # iCloud generated files

@@ -1,7 +1,9 @@
 import gradio as gr
 
 from youtube_summarizer import summarize_yt_video, is_valid_youtube_link
-from webpage_summarizer import summarize_webpage, is_accessible
+#from dspy_yt_summarizer import summarize_yt_video, is_valid_youtube_link
+#from webpage_summarizer import summarize_webpage, is_accessible
+from dspy_wp_summarizer import summarize_webpage, is_accessible
 
 
 def summarize(url):
@@ -10,7 +12,7 @@ def summarize(url):
         return result
     elif is_accessible(url):
         result = summarize_webpage(url)
-        return result
+        return result['summary']
     else:
         return "Invalid or inaccessible URL. Please enter a valid URL."
 
